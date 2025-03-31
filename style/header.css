@@ -1,2 +1,257 @@
 
 
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #ff6633;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-smile {
+    width: 20px;
+    height: 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    position: relative;
+}
+
+.logo-smile::before,
+.logo-smile::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    top: -8px;
+}
+
+.logo-smile::before {
+    left: 2px;
+}
+
+.logo-smile::after {
+    right: 2px;
+}
+
+.logo-text {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+/* Catalog Button */
+.catalog-btn {
+    display: flex;
+    align-items: center;
+    background-color: #70c05b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.catalog-btn i {
+    margin-right: 8px;
+}
+
+/* Search */
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    max-width: 400px;
+    margin-right: 16px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+}
+
+/* Navigation Icons */
+.nav-icons {
+    display: flex;
+    gap: 24px;
+    margin-right: 24px;
+}
+
+.nav-icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.nav-icon-link i {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.nav-icon-text {
+    font-size: 12px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff6633;
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* User Profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.user-name {
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.breadcrumb-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-separator {
+    font-size: 10px;
+    margin: 0 8px;
+    color: #999;
+}
+
+.breadcrumb-current {
+    color: #999;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .nav-icon-text {
+        display: none;
+    }
+    
+    .nav-icons {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-name {
+        display: none;
+    }
+    
+    .catalog-btn span {
+        display: none;
+    }
+    
+    .catalog-btn {
+        padding: 10px;
+    }
+    
+    .catalog-btn i {
+        margin-right: 0;
+    }
+    
+    .search-container {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-text {
+        display: none;
+    }
+    
+    .search-container {
+        max-width: 150px;
+    }
+    
+    .nav-icons {
+        gap: 12px;
+    }
+}

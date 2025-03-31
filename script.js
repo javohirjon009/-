@@ -87,3 +87,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return categories[slug] || 'Категория';
     }
 });
+
+
+
+// ------------------------
+
+
