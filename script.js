@@ -66,9 +66,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-
-// ------------------------
-
-
  
