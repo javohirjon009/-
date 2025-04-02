@@ -15,7 +15,6 @@
     justify-content: space-between;
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -68,7 +67,7 @@
     margin-left: 8px;
 }
 
-/* Catalog Button */
+
 .catalog-btn {
     display: flex;
     align-items: center;
@@ -86,7 +85,6 @@
     margin-right: 8px;
 }
 
-/* Search */
 .search-container {
     flex-grow: 1;
     display: flex;
@@ -114,7 +112,7 @@
     cursor: pointer;
 }
 
-/* Navigation Icons */
+
 .nav-icons {
     display: flex;
     gap: 24px;
@@ -154,7 +152,7 @@
     justify-content: center;
 }
 
-/* User Profile */
+
 .user-profile {
     display: flex;
     align-items: center;
@@ -174,7 +172,7 @@
     margin-right: 4px;
 }
 
-/* Breadcrumbs */
+
 .breadcrumbs {
     display: flex;
     align-items: center;
@@ -201,7 +199,7 @@
     color: #999;
 }
 
-/* Page Title */
+
 .page-title {
     font-size: 36px;
     font-weight: bold;
@@ -209,7 +207,7 @@
     color: #333;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 992px) {
     .nav-icon-text {
         display: none;
