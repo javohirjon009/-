@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Северяночка - Молоко, сыр, яйцо</title>
+    <link rel="stylesheet" href="./category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div>
+                <img src="../img/logo (5).png" alt="" >
+               
+            </div>
+            <div class="catalog-btn">
+                <button class="green-btn"><i class="fas fa-bars"></i> Каталог</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Найти товар">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <div class="action-item">
+                    <i class="far fa-heart"></i>
+                    <span>Избранное</span>
+                </div>
+                <div class="action-item">
+                    <i class="fas fa-box"></i>
+                    <span>Заказы</span>
+                </div>
+                <div class="action-item cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Корзина</span>
+                    <div class="cart-count">1</div>
+                </div>
+                <div class="user-profile">
+                    <img src="../img/avatar.png" alt="" class="user-avatar">
+                    <span>Алексей</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../index.html">Каталог</a></li>
+                <a href="../tovar/tovar.html" class="active">Молоко, сыр, яйцо</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="category-title">Молоко, сыр, яйцо</h1>
+
+        <div class="content-container">
+            <aside class="filters">
+                <div class="filter-group">
+                    <h3>Фильтр</h3>
+                    <div class="price-filter">
+                        <h4>Цена</h4>
+                        <div class="price-inputs">
+                            <input type="number" id="min-price" value="1" min="1">
+                            <span>—</span>
+                            <input type="number" id="max-price" value="150" max="500">
+                        </div>
+                        <div class="price-slider">
+                            <div class="slider-track"></div>
+                            <input type="range" min="1" max="500" value="1" id="slider-min">
+                            <input type="range" min="1" max="500" value="150" id="slider-max">
+                            <div class="slider-color"></div>
+                        </div>
+                    </div>
+                    <button class="reset-btn">Сбросить</button>
+                </div>
+            </aside>
+
+            <section class="products">
+                <div class="product-grid">
+                   
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./imgs/image (5).png" alt="">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">139,99 ₽</div>
+                        <div class="product-description">Колбаса КФС-1518 «ДОКТОРСКАЯ ПОЛЕВАЯ ОРИГИНАЛЬНАЯ»</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <a href="../tovar/tovar.html" class="add-to-cart-btn">В корзину</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="discount-badge">-20%</div>
+                            <img src="./imgs/image (6).png" alt="">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">49,99 ₽</span>
+                            <span class="old-price">140,50 ₽</span>
+                        </div>
+                        <div class="product-description">Молоко ПРОСТОКВАШИНО пастеризованное цельное 3,5%</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a href="../tovar/tovar.html" class="add-to-cart-btn">В корзину</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./imgs/image (7).png" alt="">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">77,99 ₽</span>
+                            <span class="old-price">140,50 ₽</span>
+                        </div>
+                        <div class="product-description">Молоко сгущенное РОГ ИЗОБИЛИЯ вареное цельное с сахаром</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="../tovar/tovar.html" class="add-to-cart-btn">В корзину</a>
+
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./imgs/image (8).png" alt="">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">192,99 ₽</div>
+                        <div class="product-description">Колбаса КФС-1518 «ДОКТОРСКАЯ ПОЛЕВАЯ ОРИГИНАЛЬНАЯ»</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="../tovar/tovar.html" class="add-to-cart-btn">В корзину</a>
+
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./imgs/image (9).png" alt="">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">29,99 ₽</div>
+                        <div class="product-description">Колбаса КФС-1518 «ДОКТОРСКАЯ ПОЛЕВАЯ ОРИГИНАЛЬНАЯ»</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="../tovar/tovar.html" class="add-to-cart-btn">В корзину</a>
+
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./imgs/image (9).png" alt="">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">29,99 ₽</div>
+                        <div class="product-description">Колбаса КФС-1518 «ДОКТОРСКАЯ ПОЛЕВАЯ ОРИГИНАЛЬНАЯ»</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <a href="../tovar/tovar.html" class="add-to-cart-btn">В корзину</a>
+
+                    </div>
+                </div>
+
+                <div class="load-more">
+                    <button id="load-more-btn">Показать еще</button>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="pagination-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="pagination-btn">1</button>
+                    <button class="pagination-btn active">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">4</button>
+                    <button class="pagination-btn">5</button>
+                    <button class="pagination-btn">6</button>
+                    <button class="pagination-btn">7</button>
+                    <button class="pagination-btn">8</button>
+                    <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+                    <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../img/logo (6).png" alt="">
+            </div>
+            <div class="footer-links">
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Вакансии</a>
+                <a href="#">Статьи</a>
+                <a href="#">Политика обработки персональных данных</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-odnoklassniki"></i></a>
+            </div>
+            <div class="footer-contact">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i>
+                    <span>8 800 777 33 33</span>
+                </div>
+                <div class="footer-cta">
+                    <span>Дизайн</span>
+                    <a href="#">Ян Александрович</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./category.js"></script>
+</body>
+
+</html>
