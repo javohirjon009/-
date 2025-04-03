@@ -4,193 +4,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товар - Северяночка</title>
+    <title>Северяночка - Интернет-магазин продуктов</title>
     <link rel="stylesheet" href="./tovar.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">
-                    <div class="logo-image"></div>
-                    <span class="logo-text">СЕВЕРЯНОЧКА</span>
-                </a>
-
-                <button class="catalog-button">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor" />
-                    </svg>
-                    Каталог
-                </button>
-
-                <div class="search-box">
-                    <input type="text" placeholder="Найти товар" class="search-input">
-                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
-                            fill="currentColor" />
-                    </svg>
+    <header>
+        <div class="header-top">
+            <div>
+                <img src="../img/logo (5).png"
+                    alt="Logo">
+            </div>
+            <div class="catalog-btn">
+                <button class="green-btn"><i class="fas fa-bars"></i> Каталог</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Найти в товар">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-actions">
+                <div class="action-item">
+                    <i class="far fa-heart"></i>
+                    <span>Избранное</span>
                 </div>
-
-                <div class="header-actions">
-                    <a href="favorites.html" class="action-item">
-                        <div class="action-icon-wrapper">
-                            <svg class="action-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z"
-                                    fill="currentColor" />
-                            </svg>
-                            <span class="counter favorites-counter">0</span>
-                        </div>
-                        <span class="action-text">Избранное</span>
-                    </a>
-
-                    <a href="orders.html" class="action-item">
-                        <svg class="action-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z"
-                                fill="currentColor" />
-                        </svg>
-                        <span class="action-text">Заказы</span>
-                    </a>
-
-                    <a href="cart.html" class="action-item">
-                        <div class="action-icon-wrapper">
-                            <svg class="action-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7 18C5.9 18 5.01 18.9 5.01 20C5.01 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM1 2V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.28 15 7.17 14.89 7.17 14.75L7.2 14.63L8.1 13H15.55C16.3 13 16.96 12.59 17.3 11.97L20.88 5.48C20.96 5.34 21 5.17 21 5C21 4.45 20.55 4 20 4H5.21L4.27 2H1ZM17 18C15.9 18 15.01 18.9 15.01 20C15.01 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z"
-                                    fill="currentColor" />
-                            </svg>
-                            <span class="counter cart-counter">0</span>
-                        </div>
-                        <span class="action-text">Корзина</span>
-                    </a>
-
-                    <div class="user-profile">
-                        <div class="user-avatar">
-                            <svg class="user-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </div>
-                        <span class="user-name">Алексей</span>
-                    </div>
+                <div class="action-item">
+                    <i class="fas fa-box"></i>
+                    <span>Заказы</span>
+                </div>
+                <div class="action-item cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Корзина</span>
+                    <div class="cart-count">1</div>
+                </div>
+                <div class="user-profile">
+                    <img src="/placeholder.svg?height=32&width=32" alt="User" class="user-avatar">
+                    <span>Алексей</span>
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../index.html">Каталог</a></li>
+                <li><a href="#">Молочные продукты</a></li>
+                <li class="active">Масло ПРОСТОКВАШИНО Сливочное в/с 82% фольга без эмж, Россия, 180 г</li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="main">
-        <div class="container">
-            <div id="productDetail">
-                <!-- Product details will be loaded dynamically -->
-                <div class="product-detail-skeleton">
-                    <div class="breadcrumbs-skeleton"></div>
-                    <div class="title-skeleton"></div>
-                    <div class="product-content-skeleton">
-                        <div class="product-image-skeleton"></div>
-                        <div class="product-info-skeleton">
-                            <div class="info-row-skeleton"></div>
-                            <div class="info-row-skeleton"></div>
-                            <div class="info-block-skeleton"></div>
-                        </div>
+    <main>
+        <div class="product-container">
+            <div class="product-gallery">
+                <div class="thumbnail-list">
+                    <div class="thumbnail active">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Thumbnail 1" class="thumbnail-img">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Thumbnail 2" class="thumbnail-img">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Thumbnail 3" class="thumbnail-img">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Thumbnail 4" class="thumbnail-img">
+                    </div>
+                </div>
+                <div class="main-image">
+                    <div class="discount-badge">-40%</div>
+                    <img src="/placeholder.svg?height=300&width=300" alt="Масло ПРОСТОКВАШИНО" class="product-img">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Масло ПРОСТОКВАШИНО Сливочное в/с 82% фольга без эмж, Россия, 180 г</h1>
+                <div class="product-code">арт. 27443</div>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="review-count">3 отзыва</span>
+                    <button class="share-btn"><i class="fas fa-share-alt"></i> Поделиться</button>
+                    <button class="favorite-btn"><i class="far fa-heart"></i> В избранное</button>
+                </div>
+
+                <div class="product-price-container">
+                    <div class="price-block">
+                        <div class="old-price">192,69 ₽</div>
+                        <div class="current-price">108,99 ₽</div>
+                        <div class="price-info"><i class="fas fa-info-circle"></i></div>
+                    </div>
+                    <button class="add-to-cart-btn">В корзину</button>
+                </div>
+
+                <div class="product-details">
+                    <div class="detail-row">
+                        <div class="detail-label">Бренд</div>
+                        <div class="detail-value">ПРОСТОКВАШИНО</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Страна производства</div>
+                        <div class="detail-value">Россия</div>
+                    </div>
+                    <div class="detail-row">
+                        <div class="detail-label">Упаковка</div>
+                        <div class="detail-value">180 г</div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <section class="related-products">
+            <h2>С этим товаров покупают</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=150&width=150" alt="Related product 1">
+                        <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-price">77,99 ₽</div>
+                    <div class="product-description">Колбаса КФС-1518 «ДОКТОРСКАЯ ОРИГИНАЛЬНАЯ»</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart-small">В корзину</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=150&width=150" alt="Related product 2">
+                        <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-price">44,50 ₽</div>
+                    <div class="product-description">Колбаса сырокопченая МИРАТОРГ «ОХОТНИЧЬИ Сливочные»</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart-small">В корзину</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=150&width=150" alt="Related product 3">
+                        <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-price">159,99 ₽</div>
+                    <div class="product-description">Колбаски КФС-1518 «ДОКТОРСКАЯ ОРИГИНАЛЬНАЯ»</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart-small">В корзину</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/placeholder.svg?height=150&width=150" alt="Related product 4">
+                        <button class="favorite-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-price">49,39 ₽</div>
+                    <div class="product-description">Кефир КФС-1518 «ДОКТОРСКАЯ ОРИГИНАЛЬНАЯ»</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <button class="add-to-cart-small">В корзину</button>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-content">
-                <div class="footer-column">
-                    <a href="index.html" class="logo">
-                        <div class="logo-image"></div>
-                        <span class="logo-text">СЕВЕРЯНОЧКА</span>
+                <div class="footer-logo">
+                    <a href="/">
+                       <img src="./img/logo (6).png" alt="">
                     </a>
-                    <p class="footer-description">Интернет-магазин продуктов питания</p>
                 </div>
 
-                <div class="footer-column">
-                    <h3 class="footer-title">О компании</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Вакансии</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="#">О компании</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Вакансии</a>
+                    <a href="#">Статьи</a>
+                    <a href="#">Политика обработки персональных данных</a>
                 </div>
 
-                <div class="footer-column">
-                    <h3 class="footer-title">Каталог</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Молоко, сыр, яйцо</a></li>
-                        <li><a href="#">Хлеб</a></li>
-                        <li><a href="#">Фрукты и овощи</a></li>
-                        <li><a href="#">Замороженные продукты</a></li>
-                    </ul>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
 
-                <div class="footer-column">
-                    <h3 class="footer-title">Помощь</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Возврат</a></li>
-                        <li><a href="#">Вопросы и ответы</a></li>
-                    </ul>
+                <div class="footer-phone">
+                    <p>8 800 777 33 33</p>
                 </div>
-
-                <div class="footer-column">
-                    <h3 class="footer-title">Контакты</h3>
-                    <div class="footer-contact">
-                        <svg class="contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
-                                fill="currentColor" />
-                        </svg>
-                        <a href="tel:88007773333" class="phone-link">8 800 777 33 33</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93V15.07C2 20.67 3.33 22 8.93 22H15.07C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2ZM18.15 16.27H16.69C16.14 16.27 15.97 15.82 14.86 14.72C13.86 13.77 13.49 13.67 13.27 13.67C12.95 13.67 12.87 13.76 12.87 14.18V15.77C12.87 16.1 12.75 16.27 11.81 16.27C10.17 16.27 8.37 15.35 7.08 13.7C5.27 11.37 4.71 9.53 4.71 9.15C4.71 8.96 4.8 8.79 5.15 8.79H6.61C6.97 8.79 7.09 8.94 7.24 9.28C8.05 11.49 9.43 13.42 10.04 13.42C10.25 13.42 10.33 13.33 10.33 12.88V10.85C10.28 9.84 9.75 9.76 9.75 9.43C9.75 9.29 9.86 9.14 10.06 9.14H12.15C12.46 9.14 12.56 9.29 12.56 9.61V12.43C12.56 12.75 12.69 12.85 12.81 12.85C13.02 12.85 13.19 12.75 13.58 12.37C14.69 11.16 15.49 9.33 15.49 9.33C15.6 9.14 15.74 8.98 16.11 8.98H17.57C18.01 8.98 18.1 9.19 18.01 9.47C17.83 10.17 16.18 12.44 16.18 12.44C16.03 12.67 15.97 12.78 16.18 13.04C16.33 13.23 16.77 13.61 17.08 13.97C17.68 14.63 18.13 15.17 18.27 15.57C18.4 15.97 18.23 16.27 18.15 16.27Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="copyright">© 2023 Северяночка</p>
-                <p class="footer-signature">Дизайн и разработка</p>
             </div>
         </div>
     </footer>
