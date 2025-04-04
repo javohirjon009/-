@@ -1,41 +1,59 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const catalogContainer = document.querySelector(".catalog-content");
-  const categoriesGrid = document.querySelector(".categories-grid");
-console.log(document.querySelector(".catalog-content"));
-console.log(document.querySelector(".categories-grid"));
 
+  const localProducts = [
+      {
+          href: "./product.html",
+          image: "images/dorem.png",
+          alt: "Dorelli product",
+          price: "139.99 ₽",
+          title: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+          rating: 5,
+      },
+      {
+          href: "./product.html",
+          image: "images/yogurt.png",
+          alt: "Dorelli product",
+          price: "69,99 ₽",
+          title: "Молоко ПРОСТОКВАШИНО паст. питьевое цельное",
+          rating: 5,
+      },
+      {
+          href: "./product.html",
+          image: "images/moloko.png",
+          alt: "Dorelli product",
+          price: "77,99 ₽",
+          title: "Молоко сгущенное РОГАЧЕВ Егорка, цельное с сахаром...",
+          rating: 5,
+      }
+  ];
+
+  catalogContainer.innerHTML = localProducts.map(product => `
+      <div class="product-card">
+          <a href="${product.href}">
+              <img src="${product.image}" alt="${product.alt}" class="product-image">
+          </a>
+          <h3 class="product-title">${product.title}</h3>
+          <p class="product-price">${product.price}</p>
+          <button class="add-to-cart">Добавить в корзину</button>
+      </div>
+  `).join("");
 
   fetch("https://fakestoreapi.com/products")
       .then(response => response.json())
-      .then(products => {
-          catalogContainer.innerHTML = products.map(product => `
+      .then(apiProducts => {
+          const apiProductsHtml = apiProducts.map(product => `
               <div class="product-card">
-                  <img src="${product.image}" alt="${product.title}" class="product-image">
+                  <a href="./product.html">
+                      <img src="${product.image}" alt="${product.title}" class="product-image">
+                  </a>
                   <h3 class="product-title">${product.title}</h3>
-                  <p class="product-price">$${product.price}</p>
+                  <p class="product-price">${product.price} ₽</p>
                   <button class="add-to-cart">Добавить в корзину</button>
               </div>
           `).join("");
+
+          catalogContainer.innerHTML += apiProductsHtml; 
       })
-      .catch(error => console.error("Mahsulotlarni yuklashda xatolik: ", error));
-
-  const categories = [
-      { id: 1, name: "Молоко, сыр, яйца", image: "./img/img.png" },
-      { id: 2, name: "Хлеб", image: "./img/img (1).png" },
-      { id: 3, name: "Фрукты и овощи", image: "./img/img (2).png" },
-      { id: 4, name: "Замороженные продукты", image: "./img/img (3).png" },
-      { id: 5, name: "Напитки", image: "./img/img (4).png" }
-  ];
-
-  categoriesGrid.innerHTML = categories.map(category => `
-      <a href="#" class="category-item">
-          <div class="category-image">
-              <img src="${category.image}" alt="${category.name}">
-              <div class="category-overlay"></div>
-              <h2 class="category-title">${category.name}</h2>
-          </div>
-      </a>
-  `).join("");
+      .catch(error => console.error("API-dan mahsulotlarni yuklashda xatolik:", error));
 });
